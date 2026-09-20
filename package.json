@@ -9,7 +9,7 @@
   "files": ["dist", "LICENSE", "README.md"],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "check": "eslint . && vitest run && tsc --noEmit && tsc -p tsconfig.build.json",
+    "check": "eslint . && vitest run && tsc -p tsconfig.build.json && tsc --noEmit",
     "lint": "eslint .",
     "prepack": "npm run build",
     "test": "vitest run"
